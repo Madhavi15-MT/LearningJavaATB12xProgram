@@ -10,3 +10,4 @@ public class Lab012_LoginPage {
         System.out.println("Now we have added the output");
     }
 }
+
