@@ -1,7 +1,11 @@
 package ex_01_Java_Basics;
 
-public class This_is_a_very_long_name_Class_created {
+public class Lab001_HelloWorld {
     public static void main(String[] args) {
 
+        System.out.println("Hello Madhavi");
     }
+
+
+
 }

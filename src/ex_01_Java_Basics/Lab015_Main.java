@@ -1,6 +1,6 @@
 package ex_01_Java_Basics;
 
-public class Main {
+public class Lab015_Main {
     public static void main(String[] args) {
         System.out.printf("Hello and welcome!");
 
