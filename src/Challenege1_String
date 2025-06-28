@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class challenge1 {
+    public static void main(String[] args) {
+        // Create Scanner object for user input
+        Scanner sc = new Scanner(System.in);
+
+        // Take input from user
+        System.out.print("Enter a string: ");
+        String input = sc.nextLine();
+
+        // Calculate length
+        int length = input.length();
+
+        // Extract first character
+        char firstChar = input.charAt(0);
+
+        // Extract substring ("World" from "Hello World")
+        String substring = input.substring(input.indexOf("World")); // Extract "World"
+
+        // Print results
+        System.out.println("Length: " + length + ", First char: " + firstChar + ", Substring: " + substring);
+
+        // Close Scanner
+        sc.close();
+    }
+}
