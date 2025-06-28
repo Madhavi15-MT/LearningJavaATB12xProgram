@@ -1,0 +1,32 @@
+public class challenge3 {
+    public static void main(String[] args) {
+        int iterations = 1000;
+
+        // Measure String performance
+        long startTime = System.currentTimeMillis();
+        String str = "";
+        for (int i = 0; i < iterations; i++) {
+            str += i;  // Creates new objects each time (inefficient)
+        }
+        long stringTime = System.currentTimeMillis() - startTime;
+
+        // Measure StringBuilder performance
+        startTime = System.currentTimeMillis();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < iterations; i++) {
+            sb.append(i);  // Efficient O(1) operation
+        }
+        long stringBuilderTime = System.currentTimeMillis() - startTime;
+
+        // Measure StringBuffer performance
+        startTime = System.currentTimeMillis();
+        StringBuffer sbf = new StringBuffer();
+        for (int i = 0; i < iterations; i++) {
+            sbf.append(i);  // Thread-safe but slightly slower
+        }
+        long stringBufferTime = System.currentTimeMillis() - startTime;
+
+        // Print results
+        System.out.println("String: " + stringTime + "ms, StringBuilder: " + stringBuilderTime + "ms, StringBuffer: " + stringBufferTime + "ms");
+    }
+}
