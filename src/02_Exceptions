@@ -1,4 +1,7 @@
-public class ArrayUtils {
+package CollectionFramework;
+import java.util.*;         // For List, Scanner, etc.
+import java.util.Arrays;    // For Arrays.toString()
+public class swap {
     public static <T> void swap(T[] array, int i, int j) {
         if (array == null || i < 0 || j < 0 || i >= array.length || j >= array.length) {
             throw new IllegalArgumentException("Invalid index or null array");
